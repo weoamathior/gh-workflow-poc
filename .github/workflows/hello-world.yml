@@ -1,0 +1,10 @@
+name: Hello Workflow
+on: workflow_dispatch # manually trigger workflow
+jobs:
+  hello-first-job: # your name
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greeting
+        run: echo "hello world!"
+      - name: print goodbye
+        run: echo "Goodbye"
